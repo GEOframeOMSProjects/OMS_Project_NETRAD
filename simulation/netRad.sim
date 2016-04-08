@@ -17,7 +17,6 @@ resource "$oms_prj/lib"
         "reader_data_down"                 "org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
         "reader_data_up"                   "org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorReader"
         "net"                                   "netRadiation.NetRadiation"
-        "vreader_station"                      "org.jgrasstools.gears.io.shapefile.OmsShapefileFeatureReader"
         "writer_net"                            "org.jgrasstools.gears.io.timedependent.OmsTimeSeriesIteratorWriter" 
             
          
@@ -55,10 +54,7 @@ resource "$oms_prj/lib"
         "reader_data_up.tTimestep"         60
         "reader_data_up.fileNovalue"      "-9999"
 
-         "vreader_station.file"                 "${home}/data/stations.shp"
-       
-        "net.fStationsid"     "cat"
-        "net.alfa"            0
+        "net.alfa"            0.5
             
         // parameter of the writing component    
         "writer_net.file"                   "${home}/output/netRad.csv" 
@@ -73,7 +69,6 @@ resource "$oms_prj/lib"
         "reader_data_DiffuseSWRB.outData"             "net.inShortwaveDiffuseValues"
         "reader_data_down.outData"                  "net.inDownwellingValues"
         "reader_data_up.outData"                  "net.inUpwellingValues"
-        "vreader_station.geodata"                       "net.inStations"
         "net.outHMnetRad"                                    "writer_net.inData"
 
    }
