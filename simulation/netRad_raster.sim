@@ -27,11 +27,11 @@ resource "$oms_prj/lib"
    parameter{
    
         // parameter of the reader components 
-        "reader_data_SWRB.file"             "${home}/data/raster/SWRB_raster.asc" 
+        "reader_data_SWRB.file"             "${home}/data/DataRaster/SWRB_raster.asc" 
       
-        "reader_data_down.file"             "${home}/data/raster/LwrbDownWellingRaster.asc" 
+        "reader_data_down.file"             "${home}/data/DataRaster/LwrbDownWellingRaster.asc" 
      
-        "reader_data_up.file"             "${home}/data/raster/LwrbUpWellingRaster.asc"
+        "reader_data_up.file"             "${home}/data/DataRaster/LwrbUpWellingRaster.asc"
 
 
 
